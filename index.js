@@ -41,7 +41,7 @@ if(cmd === `${prefix}say`){
     }
   }
     
-if (message.content.startsWith(prefix + 'embed')) {
+if (cmd === `${prefix}embed){
 if (message.channel.type === "dm") return;
 if(!message.guild.member(message.author).hasPermission("MANAGE_GUILD")) return message.reply("**:x: Vous n'avez pas la permission `manage-guild` dans ce serveur**").catch(console.error);
     let args = message.content.split(" ").slice(1).join(" ");
