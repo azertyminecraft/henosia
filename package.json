@@ -1,7 +1,7 @@
 {
-    "name": "bot",
+    "name": "henosia",
     "version": "1.0.1",
-    "description": "WorldCraft est le bot de WorldCraft",
+    "description": "Robot Officiel du serveur Henosia",
     "main": "main.js",
     "dependencies": {
       "discord.js": "^11.2.1",
@@ -10,13 +10,13 @@
     },
     "devDependencies": {},
     "scripts": {
-      "test": "echo \"Error: no test specified\" && exit 1"
+      "test": ""
     },
     "keywords": [
       "world",
       "craft",
       "bot"
     ],
-    "author": "Corentin",
+    "author": "Spikyz",
     "license": "ISC"
   }
