@@ -1,4 +1,4 @@
-const Discord = require('discord.js');
+econst Discord = require('discord.js');
 
 var bot = new Discord.Client();
 const express = require('express');
@@ -39,7 +39,7 @@ if(cmd === `${prefix}say`){
     } else {
       message.reply("Tu n'es pas mon **créateur**.")
     }
-  if(cmd === `${prefix}say`){
+  if(cmd === `${prefix}saye`){
     if(message.author.id === '205752580251451392'){
       let say = args.join(" ").slice();
       let sayembed = new Discord.RichEmbed()
