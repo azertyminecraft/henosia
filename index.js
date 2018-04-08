@@ -39,20 +39,14 @@ if(cmd === `${prefix}say`){
     } else {
       message.reply("Tu n'es pas mon **créateur**.")
     }
+  if(cmd === `${prefix}say`){
+    if(message.author.id === '205752580251451392'){
+      let say = args.join(" ").slice();
+      let sayembed = new Discord.RichEmbed()
+      .setDescription(`${say}`)
+
+      message.channel.sendEmbed(sayembed)
+    }
   }
-    
-if (cmd === `${prefix}embed){
-if (message.channel.type === "dm") return;
-if(!message.guild.member(message.author).hasPermission("MANAGE_GUILD")) return message.reply("**:x: Vous n'avez pas la permission `manage-guild` dans ce serveur**").catch(console.error);
-    let args = message.content.split(" ").slice(1).join(" ");
-    if(!args) return message.channel.send("Vous voulez rien me faire répéter ?");
-    message.delete()
-    var embed = new Discord.RichEmbed();
-    embed.setColor(0xFF358B)
-      .setDescription(args)
-    message.channel.sendEmbed(
-      embed, {
-        disableEveryone: true
-      }
-    );
-  }}
+
+  }})
